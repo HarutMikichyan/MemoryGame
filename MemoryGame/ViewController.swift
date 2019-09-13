@@ -76,7 +76,6 @@ class ViewController: UIViewController {
             self.emojiChoices = ["👻", "🎃", "👨🏿‍💻", "💩", "💀", "☠️", "🍔", "🏓", "🎾", "🎲", "🏛", "💻", "⏳"]
             self.game = MemoryGame(numberOfPairOfCards: (self.cardButtons.count + 1) / 2)
             self.emoji = [Int: String]()
-            self.game.cards.shuffle()
             Card.uniqueIdentifier = 0
             self.flipCount = 0
             
